@@ -3,11 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3F59017D3B49CDEB5D6554A8 /* Pods_TVShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7519E0E637EF2C160993D8FA /* Pods_TVShow.framework */; };
+		650B80EA26BACBD6009393B0 /* ShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B80E926BACBD6009393B0 /* ShowCell.swift */; };
+		650B80ED26BAD9FB009393B0 /* ShowServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B80EC26BAD9FB009393B0 /* ShowServices.swift */; };
+		650B80EF26BADD90009393B0 /* ShowListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B80EE26BADD90009393B0 /* ShowListModel.swift */; };
+		650B80F126BADEE6009393B0 /* SeasonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B80F026BADEE6009393B0 /* SeasonModel.swift */; };
+		650B80F326BAE0C1009393B0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B80F226BAE0C1009393B0 /* Common.swift */; };
+		650B80F626BAFF08009393B0 /* ShowRating+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B80F426BAFF08009393B0 /* ShowRating+CoreDataClass.swift */; };
+		650B80F726BAFF08009393B0 /* ShowRating+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B80F526BAFF08009393B0 /* ShowRating+CoreDataProperties.swift */; };
 		657CC72F26BABD3100C73358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657CC72E26BABD3100C73358 /* AppDelegate.swift */; };
 		657CC73126BABD3100C73358 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657CC73026BABD3100C73358 /* SceneDelegate.swift */; };
 		657CC73326BABD3100C73358 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657CC73226BABD3100C73358 /* ViewController.swift */; };
@@ -19,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650B80E926BACBD6009393B0 /* ShowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCell.swift; sourceTree = "<group>"; };
+		650B80EC26BAD9FB009393B0 /* ShowServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowServices.swift; sourceTree = "<group>"; };
+		650B80EE26BADD90009393B0 /* ShowListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListModel.swift; sourceTree = "<group>"; };
+		650B80F026BADEE6009393B0 /* SeasonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonModel.swift; sourceTree = "<group>"; };
+		650B80F226BAE0C1009393B0 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		650B80F426BAFF08009393B0 /* ShowRating+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowRating+CoreDataClass.swift"; sourceTree = "<group>"; };
+		650B80F526BAFF08009393B0 /* ShowRating+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowRating+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		657CC72B26BABD3100C73358 /* TVShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		657CC72E26BABD3100C73358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		657CC73026BABD3100C73358 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +60,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		650B80E826BACBC9009393B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				650B80E926BACBD6009393B0 /* ShowCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		650B80EB26BAD9E4009393B0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				650B80EC26BAD9FB009393B0 /* ShowServices.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		657CC72226BABD3100C73358 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +97,8 @@
 		657CC72D26BABD3100C73358 /* TVShow */ = {
 			isa = PBXGroup;
 			children = (
+				650B80EB26BAD9E4009393B0 /* Service */,
+				650B80E826BACBC9009393B0 /* View */,
 				657CC74826BAC16300C73358 /* Controls */,
 				657CC74526BAC12B00C73358 /* Model */,
 				657CC72E26BABD3100C73358 /* AppDelegate.swift */,
@@ -76,6 +108,7 @@
 				657CC73C26BABD3200C73358 /* LaunchScreen.storyboard */,
 				657CC73F26BABD3200C73358 /* Info.plist */,
 				657CC73726BABD3100C73358 /* TVShow.xcdatamodeld */,
+				650B80F226BAE0C1009393B0 /* Common.swift */,
 			);
 			path = TVShow;
 			sourceTree = "<group>";
@@ -83,6 +116,10 @@
 		657CC74526BAC12B00C73358 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				650B80F426BAFF08009393B0 /* ShowRating+CoreDataClass.swift */,
+				650B80F526BAFF08009393B0 /* ShowRating+CoreDataProperties.swift */,
+				650B80EE26BADD90009393B0 /* ShowListModel.swift */,
+				650B80F026BADEE6009393B0 /* SeasonModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,7 +147,6 @@
 				C06C6163498C7938A9D56DF4 /* Pods-TVShow.debug.xcconfig */,
 				A5EB3987A23F89CF1840B8DA /* Pods-TVShow.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,10 +264,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650B80EA26BACBD6009393B0 /* ShowCell.swift in Sources */,
 				657CC73326BABD3100C73358 /* ViewController.swift in Sources */,
 				657CC72F26BABD3100C73358 /* AppDelegate.swift in Sources */,
+				650B80F726BAFF08009393B0 /* ShowRating+CoreDataProperties.swift in Sources */,
 				657CC73926BABD3100C73358 /* TVShow.xcdatamodeld in Sources */,
+				650B80EF26BADD90009393B0 /* ShowListModel.swift in Sources */,
+				650B80F626BAFF08009393B0 /* ShowRating+CoreDataClass.swift in Sources */,
+				650B80F126BADEE6009393B0 /* SeasonModel.swift in Sources */,
+				650B80ED26BAD9FB009393B0 /* ShowServices.swift in Sources */,
 				657CC73126BABD3100C73358 /* SceneDelegate.swift in Sources */,
+				650B80F326BAE0C1009393B0 /* Common.swift in Sources */,
 				657CC74726BAC15600C73358 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
