@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F59017D3B49CDEB5D6554A8 /* Pods_TVShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7519E0E637EF2C160993D8FA /* Pods_TVShow.framework */; };
 		657CC72F26BABD3100C73358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657CC72E26BABD3100C73358 /* AppDelegate.swift */; };
 		657CC73126BABD3100C73358 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657CC73026BABD3100C73358 /* SceneDelegate.swift */; };
 		657CC73326BABD3100C73358 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657CC73226BABD3100C73358 /* ViewController.swift */; };
@@ -14,6 +15,7 @@
 		657CC73926BABD3100C73358 /* TVShow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 657CC73726BABD3100C73358 /* TVShow.xcdatamodeld */; };
 		657CC73B26BABD3200C73358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657CC73A26BABD3200C73358 /* Assets.xcassets */; };
 		657CC73E26BABD3200C73358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657CC73C26BABD3200C73358 /* LaunchScreen.storyboard */; };
+		657CC74726BAC15600C73358 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657CC74626BAC15600C73358 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		657CC73A26BABD3200C73358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		657CC73D26BABD3200C73358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		657CC73F26BABD3200C73358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		657CC74626BAC15600C73358 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		7519E0E637EF2C160993D8FA /* Pods_TVShow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVShow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5EB3987A23F89CF1840B8DA /* Pods-TVShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShow.release.xcconfig"; path = "Target Support Files/Pods-TVShow/Pods-TVShow.release.xcconfig"; sourceTree = "<group>"; };
+		C06C6163498C7938A9D56DF4 /* Pods-TVShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShow.debug.xcconfig"; path = "Target Support Files/Pods-TVShow/Pods-TVShow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F59017D3B49CDEB5D6554A8 /* Pods_TVShow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				657CC72D26BABD3100C73358 /* TVShow */,
 				657CC72C26BABD3100C73358 /* Products */,
+				81B00D9199E87812291A503D /* Pods */,
+				6FE39AEA60C709A900DDE2CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +67,10 @@
 		657CC72D26BABD3100C73358 /* TVShow */ = {
 			isa = PBXGroup;
 			children = (
+				657CC74826BAC16300C73358 /* Controls */,
+				657CC74526BAC12B00C73358 /* Model */,
 				657CC72E26BABD3100C73358 /* AppDelegate.swift */,
 				657CC73026BABD3100C73358 /* SceneDelegate.swift */,
-				657CC73226BABD3100C73358 /* ViewController.swift */,
 				657CC73426BABD3100C73358 /* Main.storyboard */,
 				657CC73A26BABD3200C73358 /* Assets.xcassets */,
 				657CC73C26BABD3200C73358 /* LaunchScreen.storyboard */,
@@ -70,6 +80,40 @@
 			path = TVShow;
 			sourceTree = "<group>";
 		};
+		657CC74526BAC12B00C73358 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		657CC74826BAC16300C73358 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				657CC73226BABD3100C73358 /* ViewController.swift */,
+				657CC74626BAC15600C73358 /* DetailsViewController.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		6FE39AEA60C709A900DDE2CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7519E0E637EF2C160993D8FA /* Pods_TVShow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81B00D9199E87812291A503D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C06C6163498C7938A9D56DF4 /* Pods-TVShow.debug.xcconfig */,
+				A5EB3987A23F89CF1840B8DA /* Pods-TVShow.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 657CC74226BABD3200C73358 /* Build configuration list for PBXNativeTarget "TVShow" */;
 			buildPhases = (
+				E9FFCF1029B64A710EDDF442 /* [CP] Check Pods Manifest.lock */,
 				657CC72726BABD3100C73358 /* Sources */,
 				657CC72826BABD3100C73358 /* Frameworks */,
 				657CC72926BABD3100C73358 /* Resources */,
+				3186F35C0BED1FF1AF5D12A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +181,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3186F35C0BED1FF1AF5D12A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVShow/Pods-TVShow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVShow/Pods-TVShow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TVShow/Pods-TVShow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9FFCF1029B64A710EDDF442 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVShow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		657CC72726BABD3100C73358 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +232,7 @@
 				657CC72F26BABD3100C73358 /* AppDelegate.swift in Sources */,
 				657CC73926BABD3100C73358 /* TVShow.xcdatamodeld in Sources */,
 				657CC73126BABD3100C73358 /* SceneDelegate.swift in Sources */,
+				657CC74726BAC15600C73358 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +376,7 @@
 		};
 		657CC74326BABD3200C73358 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C06C6163498C7938A9D56DF4 /* Pods-TVShow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +396,7 @@
 		};
 		657CC74426BABD3200C73358 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5EB3987A23F89CF1840B8DA /* Pods-TVShow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
